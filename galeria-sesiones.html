@@ -8,28 +8,177 @@
     <title>Sesiones - CHNKIMERA</title>
 </head>
 
-<body class="w-full h-full bg-gradient-to-b from-black via-gray-900 to-black text-white">
+<body class="w-full h-full bg-linear-to-b from-black via-gray-900 to-black text-white">
+    <!-- HEADER -->
+    <header class="absolute top-0 w-full z-50 backdrop-brightness-60">
+        <nav
+            class="container my-6 mx-auto flex md:justify-between justify-evenly items-center text-white md:px-4 text-shadow-lg">
+            <!-- LOGO  -->
+            <h1 class="text-3xl font-bold font-playfair">CHNKIMERA</h1>
 
+            <!-- Botón Hamburguesa -->
+            <button data-collapse-toggle="navbar" type="button"
+                class="inline-flex items-center p-2 text-white md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- MENÚ NAV -->
+            <ul id="navbar"
+                class="hidden flex-col md:flex md:flex-row gap-12 items-end sm:text-lg md:text-xl font-playfair font-light">
+                <li><a href="index.html" class="hover:text-gray-400 nav-link">INICIO</a></li>
+                <li><a href="sobre-mi.html" class="hover:text-gray-400 nav-link">SOBRE MÍ</a></li>
+                <li><a href="portafolio.html" class="hover:text-gray-400 nav-link">PORTAFOLIO</a></li>
+                <li><a href="contacto.html" class="hover:text-gray-400 nav-link">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- HERO -->
-    <section id="hero" class="relative w-full h-72 flex items-center justify-center overflow-hidden">
-        <img src="assets/edif12.jpg" alt="Hero Sesiones" class="absolute inset-0 w-full h-full object-cover opacity-70">
+    <section id="hero" class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <img src="assets/modelm6.jpg" alt="Hero Sesiones" class="absolute w-full h-full object-cover opacity-70">
         <div class="relative z-10 text-center">
             <h1 class="font-playfair text-4xl md:text-6xl font-bold text-gray-100">Sesiones</h1>
         </div>
     </section>
 
     <!-- GALERÍA -->
-    <section id="gallery" class="w-full min-h-screen flex flex-col items-center justify-center py-16 px-6">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl w-full">
-            <!-- Máximo 15 fotos -->
-            <img src="assets/sesion1.jpg" class="w-full h-72 object-cover rounded-lg shadow-lg" alt="Sesión 1">
-            <img src="assets/sesion2.jpg" class="w-full h-72 object-cover rounded-lg shadow-lg" alt="Sesión 2">
-            <img src="assets/sesion3.jpg" class="w-full h-72 object-cover rounded-lg shadow-lg" alt="Sesión 3">
-            <!-- ... hasta 15 imágenes -->
+    <section id="gallery"
+        class="w-full min-h-screen bg-linear-to-b from-black via-gray-900 to-black flex flex-col items-center justify-center py-20 px-8">
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-8 max-w-5xl w-full">
+
+            <!-- FOTOS -->
+            <img src="assets/modela1.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 1">
+            <img src="assets/modela2.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 2">
+            <img src="assets/modela3.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 3">
+            <img src="assets/modela4.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 4">
+            <img src="assets/modela5.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 5">
+            <img src="assets/modela6.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 6">
+            <img src="assets/modela7.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 7">
+            <img src="assets/modelm1.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 8">
+            <img src="assets/modelm2.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 9">
+            <img src="assets/modelm3.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 10">
+            <img src="assets/modelm4.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 11">
+            <img src="assets/modelm5.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 12">
+            <img src="assets/modelm6.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 13">
+            <img src="assets/modelf1.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 14">
+            <img src="assets/modelf2.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 15">
+            <img src="assets/modelf3.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 16">
+            <img src="assets/modelf4.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 17">
+            <img src="assets/modelf5.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 18">
+            <img src="assets/modelf6.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 19">
+            <img src="assets/modell1.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 20">
+            <img src="assets/modell2.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 21">
+            <img src="assets/modell3.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 22">
+            <img src="assets/modell4.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 23">
+            <img src="assets/modell5.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 24">
+            <img src="assets/modell6.jpg" data-modal-target="lightboxModal" data-modal-toggle="lightboxModal"
+                class="mb-4 w-full h-auto object-cover rounded-lg shadow-md cursor-pointer transition-transform duration-700 hover:scale-105"
+                alt="Sesión 25">
         </div>
     </section>
 
-        <!-- FOOTER -->
+    <!-- Flowbite Modal como Lightbox -->
+
+    <div id="lightboxModal" tabindex="-1" aria-hidden="true"
+        class="hidden fixed inset-0 z-50 items-center justify-center bg-black/90">
+        <div class="relative max-w-5xl w-full px-4">
+            <!-- Imagen -->
+            <img id="lightbox-img" src="" alt="Imagen ampliada"
+                class="mx-auto max-h-screen max-w-full object-contain rounded-lg shadow-lg">
+
+            <!-- Botón cerrar -->
+            <button type="button" class="absolute top-4 right-8 text-white text-3xl"
+                data-modal-hide="lightboxModal">✕</button>
+
+            <!-- Botones de navegación -->
+            <div class="absolute inset-y-0 left-0 flex items-center">
+                <button id="prevBtn" class="text-white text-4xl px-4">‹</button>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center">
+                <button id="nextBtn" class="text-white text-4xl px-4">›</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/dist/flowbite.min.js"></script>
+    <script>
+        const lightboxImg = document.getElementById("lightbox-img");
+        const galleryImgs = Array.from(document.querySelectorAll("#gallery img"));
+        let currentIndex = 0;
+
+        galleryImgs.forEach((img, index) => {
+            img.addEventListener("click", () => {
+                currentIndex = index;
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+            });
+        });
+
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + galleryImgs.length) % galleryImgs.length;
+            lightboxImg.src = galleryImgs[currentIndex].src;
+            lightboxImg.alt = galleryImgs[currentIndex].alt;
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % galleryImgs.length;
+            lightboxImg.src = galleryImgs[currentIndex].src;
+            lightboxImg.alt = galleryImgs[currentIndex].alt;
+        });
+    </script>
+
+
+    <!-- FOOTER -->
     <footer class="font-inter py-4 bg-black border-t border-stone-900 text-center text-white text-sm md:text-base">
         <p>&copy; 2026. TODOS LOS DERECHOS RESERVADOS. CHNKIMERA PRODUCTIONS</p>
     </footer>
