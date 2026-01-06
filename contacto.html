@@ -9,12 +9,14 @@
 </head>
 
 <body class="w-full h-full bg-linear-to-b from-black via-gray-900 to-black text-white">
-
+    <!-- HEADER -->
     <header class="absolute top-0 w-full z-50 backdrop-brightness-60">
         <nav
             class="container my-6 mx-auto flex md:justify-between justify-evenly items-center text-white md:px-4 text-shadow-lg">
             <!-- LOGO  -->
-            <h1 class="text-3xl font-bold font-playfair">CHNKIMERA</h1>
+            <a href="index.html">
+                <h1 class="text-3xl font-bold font-playfair">CHNKIMERA</h1>
+            </a>
 
             <!-- Botón Hamburguesa -->
             <button data-collapse-toggle="navbar" type="button"
@@ -27,7 +29,7 @@
             <!-- MENÚ NAV -->
             <ul id="navbar"
                 class="hidden flex-col md:flex md:flex-row gap-12 items-end sm:text-lg md:text-xl font-playfair font-light">
-                <li><a href="index.html" class="hover:text-gray-400 nav-link">INICIO</a></li>
+                <li><a href="index.html" class="md:hidden hover:text-gray-400 nav-link">INICIO</a></li>
                 <li><a href="sobre-mi.html" class="hover:text-gray-400 nav-link">SOBRE MÍ</a></li>
                 <li><a href="portafolio.html" class="hover:text-gray-400 nav-link">PORTAFOLIO</a></li>
                 <li><a href="contacto.html" class="hover:text-gray-400 nav-link">CONTACTO</a></li>
@@ -58,27 +60,32 @@
             <div class="flex flex-col w-full md:w-1/2 font-inter">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center md:text-left text-gray-200">Envíame un
                     mensaje</h2>
-                <form action="mailto:chnkimera@gmail.com" method="POST" enctype="text/plain"
+                <form name="contacto" method="POST" data-netlify="true" action="/gracias.html"
                     class="flex flex-col gap-6">
-                    <input type="text" name="nombre" placeholder="Tu nombre"
-                        class="p-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500"
-                        required>
-                    <input type="email" name="email" placeholder="Tu correo"
-                        class="p-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500"
-                        required>
-                    <textarea name="mensaje" rows="5" placeholder="Tu mensaje"
-                        class="p-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500"
-                        required></textarea>
+                    <input type="hidden" name="form-name" value="contacto">
+                    <p class="hidden">
+                        <label>No llenar este campo: <input name="bot-field"></label>
+                    </p>
+
+                    <input type="text" name="nombre" placeholder="Tu nombre" required
+                        class="p-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <input type="email" name="email" placeholder="Tu correo" required
+                        class="p-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required
+                        class="p-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
                     <button type="submit"
                         class="px-6 py-4 bg-red-600 text-white font-semibold rounded-lg shadow-lg hover:bg-red-700 transition duration-500 ease-in-out transform hover:scale-105 cursor-pointer">
                         Enviar
                     </button>
                 </form>
+
+
+
             </div>
         </article>
     </section>
     <script src="/dist/flowbite.min.js"></script>
-        <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="font-inter py-4 bg-black border-t border-stone-900 text-center text-white text-sm md:text-base">
         <p>&copy; 2026. TODOS LOS DERECHOS RESERVADOS. CHNKIMERA PRODUCTIONS</p>
     </footer>
