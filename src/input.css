@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "flowbite";
+
+@theme {
+    /* Colores del proyecto Bookmark */
+    --color-bookmark-purple: #5267df;
+    --color-bookmark-red: #fa5959;
+    --color-bookmark-blue: #242a45;
+    --color-bookmark-grey: #9194a2;
+    --color-bookmark-white: #f7f7f7;
+
+    /* Tipografía */
+    --font-poppins: "Poppins", sans-serif;
+    --font-playfair: "Playfair Display", serif;
+    --font-inter: "Inter", serif;
+}
+
+/* Estilos base actualizados */
+@layer base {
+    body {
+        @apply font-poppins text-bookmark-blue;
+    }
+}
+
+/* Componentes reutilizables (Botones) */
+@layer components {
+    .btn {
+        @apply shadow-md py-3 px-10 rounded-md transition-all duration-300 cursor-pointer;
+    }
+
+    .btn-purple {
+        @apply bg-bookmark-purple text-white hover:bg-white hover:text-black;
+    }
+
+    .btn-white {
+        @apply bg-white text-black hover:bg-bookmark-purple hover:text-white;
+    }
+}
+
+@layer utilities {
+    @keyframes zoom {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.3);
+        }
+    }
+
+    .animate-zoom {
+        animation: zoom 60s ease-in-out infinite;
+        transform-origin: center;
+    }
+}

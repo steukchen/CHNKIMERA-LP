@@ -1,0 +1,32 @@
+{
+  "name": "chnkimera-lp",
+  "version": "1.0.0",
+  "description": "CHNKIMERA LANDING PAGE FOR INFORMATION",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build:flowbite": "cp ./node_modules/flowbite/dist/flowbite.min.js ./dist/flowbite.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steukchen/CHNKIMERA-LP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/steukchen/CHNKIMERA-LP/issues"
+  },
+  "homepage": "https://github.com/steukchen/CHNKIMERA-LP#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "flowbite": "^4.0.1",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6"
+  }
+}
