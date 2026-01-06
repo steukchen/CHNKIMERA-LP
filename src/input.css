@@ -20,6 +20,18 @@
     body {
         @apply font-poppins text-bookmark-blue;
     }
+
+    img {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+        pointer-events: auto;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .loader-active {
+        overflow: hidden;
+    }
 }
 
 /* Componentes reutilizables (Botones) */
@@ -54,4 +66,12 @@
         animation: zoom 60s ease-in-out infinite;
         transform-origin: center;
     }
+
+    #hero-carousel [data-carousel-item] {
+        @apply bg-black;
+        /* Fondo negro para cada slide */
+        backface-visibility: hidden;
+        /* Mejora el rendimiento de la animación */
+    }
+
 }

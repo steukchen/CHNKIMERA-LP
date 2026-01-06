@@ -8,7 +8,17 @@
     <title>Contacto - CHNKIMERA</title>
 </head>
 
-<body class="w-full h-full bg-linear-to-b from-black via-gray-900 to-black text-white">
+<body class="loader-active w-full h-full bg-linear-to-b from-black via-gray-900 to-black text-white">
+
+    <!-- LOADER INICIAL -->
+    <div id="loader"
+        class="fixed inset-0 z-100 flex flex-col items-center justify-center bg-[#0a0a0a] transition-opacity duration-500">
+        <h1 class="text-white text-2xl font-bold tracking-widest animate-pulse font-playfair">CHNKIMERA</h1>
+        <div class="w-48 h-1 bg-gray-800 mt-4 overflow-hidden rounded-full">
+            <div class="w-full h-full bg-gray-200 origin-left animate-[loading_2s_ease-in-out_infinite]"></div>
+        </div>
+    </div>
+
     <!-- HEADER -->
     <header class="absolute top-0 w-full z-50 backdrop-brightness-60">
         <nav
@@ -84,11 +94,14 @@
             </div>
         </article>
     </section>
-    <script src="/dist/flowbite.min.js"></script>
+    
     <!-- FOOTER -->
     <footer class="font-inter py-4 bg-black border-t border-stone-900 text-center text-white text-sm md:text-base">
         <p>&copy; 2026. TODOS LOS DERECHOS RESERVADOS. CHNKIMERA PRODUCTIONS</p>
     </footer>
+
+    <script src="/dist/flowbite.min.js"></script>
+    <script src="/dist/main.js"></script>
 </body>
 
 </html>
