@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Sobre Mí - CHNKIMERA</title>
+</head>
+
+<body class="loader-active w-full h-full bg-linear-to-b from-black via-gray-900 to-black text-white">
+
+    <!-- LOADER INICIAL -->
+    <div id="loader"
+        class="fixed inset-0 z-100 flex flex-col items-center justify-center bg-[#0a0a0a] transition-opacity duration-500">
+        <h1 class="text-white text-2xl font-bold tracking-widest animate-pulse font-playfair">CHNKIMERA</h1>
+        <div class="w-48 h-1 bg-gray-800 mt-4 overflow-hidden rounded-full">
+            <div class="w-full h-full bg-gray-200 origin-left animate-[loading_2s_ease-in-out_infinite]"></div>
+        </div>
+    </div>
+    <!-- HEADER -->
+    <header class="absolute top-0 w-full z-50 backdrop-brightness-60">
+        <nav
+            class="container my-6 mx-auto flex md:justify-between justify-evenly items-center text-white md:px-4 text-shadow-lg">
+            <!-- LOGO  -->
+            <a href="../index.html">
+                <h1 class="text-3xl font-bold font-playfair">CHNKIMERA</h1>
+            </a>
+
+            <!-- Botón Hamburguesa -->
+            <button data-collapse-toggle="navbar" type="button"
+                class="inline-flex items-center p-2 text-white md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- MENÚ NAV -->
+            <ul id="navbar"
+                class="hidden flex-col md:flex md:flex-row gap-12 items-end sm:text-lg md:text-xl font-playfair font-light">
+                <li><a href="../../index.html" class="md:hidden hover:text-gray-400 nav-link">INICIO</a></li>
+                <li><a href="/pages/sobre-mi.html" class="hover:text-gray-400 nav-link">SOBRE MÍ</a></li>
+                <li><a href="/pages/portafolio.html" class="hover:text-gray-400 nav-link">PORTAFOLIO</a></li>
+                <li><a href="/pages/contacto.html" class="hover:text-gray-400 nav-link">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <img src="../assets/edif12.webp" alt="Imagen Hero CHNKIMERA"
+            class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <div class="relative z-10 text-center">
+            <h1 class="font-playfair text-5xl md:text-7xl font-bold text-gray-100">Sobre Mí</h1>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section id="about" class="w-full min-h-screen flex flex-col items-center justify-center py-16 px-6">
+        <article class="flex flex-col md:flex-row items-center justify-center gap-12 max-w-6xl w-full">
+
+            <!-- Imagen -->
+            <div class="w-full h-70 md:w-96 md:h-96 overflow-hidden rounded-lg shadow-2xl">
+                <img src="../assets/edif12.webp" alt="CHNKIMERA" loading="lazy"
+                    class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+            </div>
+
+            <!-- Texto -->
+            <div class="flex flex-col text-center md:text-left font-inter">
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
+                    <span class="font-bold text-gray-100">CHNKIMERA</span> es un proyecto personal dedicado a la
+                    fotografía y producción audiovisual.
+                    CHNKIMERA Nace en Táchira, Venezuela con la intención de capturar la esencia y belleza de momentos
+                    únicos, explorando perspectivas
+                    cinematográficas
+                    que transmiten emociones y cuentan historias a través de imágenes impactantes y visuales
+                    cautivadores.
+                </p>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+                    Mi trabajo busca fusionar técnica y sensibilidad artística, creando piezas que reflejen autenticidad
+                    y estilo propio.
+                    Cada proyecto es una oportunidad para experimentar, innovar y conectar con quienes comparten la
+                    pasión por el arte visual.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section id="contact"
+        class=" flex flex-col items-center justify-center py-16 px-6 bg-linear-to-b from-gray-900 via-black to-gray-900">
+        <div class="max-w-4xl text-center">
+            <!-- Título -->
+            <h2 class="font-playfair text-5xl md:text-6xl font-bold mb-8 text-gray-200">
+                Contáctame
+            </h2>
+
+            <!-- Texto introductorio -->
+            <p class="font-inter text-lg md:text-xl text-gray-400 mb-12 leading-relaxed">
+                ¿Eres de San Cristóbal y Tienes un proyecto en mente o quieres colaborar?
+                Estoy disponible para sesiones fotográficas, producción audiovisual y proyectos creativos.
+                Haz clic en el botón para ir a la sección de contacto.
+            </p>
+
+            <!-- Botón -->
+            <button><a href="contacto.html"
+                    class="px-8 py-4 bg-red-500 text-white font-semibold rounded-lg shadow-lg hover:bg-red-400 transition duration-500 ease-in-out transform hover:scale-105 cursor-pointer">CONTACTAR</a></button>
+        </div>
+        
+        <!--REDES SOCIALES-->
+        <section class="w-full flex flex-col items-center justify-center pt-24 px-4">
+            <article class="max-w-5xl w-full flex flex-col items-center">
+                <div class="w-full flex flex-col items-center">
+                    <p class="text-xl md:text-2xl font-inter font-bold tracking-widest text-gray-200 mb-8 uppercase">
+                        Accede a mis redes sociales
+                    </p>
+
+                    <div class="flex justify-center gap-12 items-center">
+                        <a href="https://instagram.com/chnkimera" target="_blank"
+                            class="group flex flex-col items-center gap-2 transition-all duration-300">
+                            <div
+                                class="p-6 rounded-full border bg-blue-900 border-gray-800 group-hover:border-red-600 group-hover:bg-red-600/10 transition-all duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="text-white group-hover:scale-110 transition-transform">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                            <span
+                                class="text-xs font-inter tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity text-gray-300">INSTAGRAM</span>
+                        </a>
+
+                        <a href="https://tiktok.com/@chn_kimera" target="_blank"
+                            class="group flex flex-col items-center gap-2 transition-all duration-300">
+                            <div
+                                class="p-6 rounded-full border bg-blue-900 border-gray-800 group-hover:border-white group-hover:bg-white/10 transition-all duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="text-white group-hover:scale-110 transition-transform">
+                                    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                                </svg>
+                            </div>
+                            <span
+                                class="text-xs font-inter tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity text-gray-300">TIKTOK</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="font-inter py-4 bg-black border-t border-stone-900 text-center text-white text-sm md:text-base">
+        <p>&copy; 2026. TODOS LOS DERECHOS RESERVADOS. CHNKIMERA PRODUCTIONS</p>
+    </footer>
+
+    <script src="../dist/flowbite.min.js"></script>
+    <script src="../dist/main.js"></script>
+</body>
+
+</html>
